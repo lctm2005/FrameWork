@@ -60,4 +60,13 @@ public class GlobalConfig {
         result = 31 * result + (itemValue != null ? itemValue.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "GlobalConfig{" +
+                "id=" + id +
+                ", itemKey='" + itemKey + '\'' +
+                ", itemValue='" + itemValue + '\'' +
+                '}';
+    }
 }
