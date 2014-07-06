@@ -31,11 +31,6 @@
     <!-- 配置Spring 注解扫描范围 -->
     <context:component-scan base-package="com.licong"/>
 
-    <!-- 定时任务配置 -->
-    <task:annotation-driven executor="executor" scheduler="scheduler"/>
-    <task:executor id="executor" pool-size="5"/>
-    <task:scheduler id="scheduler" pool-size="20"/>
-
     <!-- 配置数据库连接dataSource -->
     <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName" value="java:comp/env/jdbc/mysqlc3p0"/>

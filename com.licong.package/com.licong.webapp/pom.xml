@@ -6,7 +6,7 @@
         <groupId>com.licong</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>mywebapp</artifactId>
+        <artifactId>webapp</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
@@ -15,11 +15,16 @@
             <artifactId>service</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.licong</groupId>
+            <artifactId>repository</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 
     <build>
-        <finalName>mywebapp</finalName>
+        <finalName>webapp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
