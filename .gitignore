@@ -1,0 +1,8 @@
+com.licong.package/.idea/
+com.licong.package/com.licong.webapp/target/
+com.licong.package/com.licong.util/target/
+com.licong.package/com.licong.repository/target/
+com.licong.package/com.licong.schedule/target/
+com.licong.package/com.licong.service/target/
+*.class
+*.iml
