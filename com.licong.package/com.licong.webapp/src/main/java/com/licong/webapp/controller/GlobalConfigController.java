@@ -2,6 +2,7 @@ package com.licong.webapp.controller;
 
 import com.licong.repository.dao.GlobalConfigDao;
 import com.licong.repository.domain.GlobalConfig;
+import com.licong.service.IGlobalConfigService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,11 +20,11 @@ public class GlobalConfigController {
     private static final Logger LOG = LoggerFactory.getLogger(GlobalConfigController.class);
 
     @Autowired
-    private GlobalConfigDao globalConfigDao;
+    private IGlobalConfigService globalConfigService;
 
     @RequestMapping(value = "/get/{id}")
     @ResponseBody
-    public GlobalConfig getGlobalConfig(@PathVariable Long id) {
-        return globalConfigDao.findOne(id);
+    public GlobalConfig get(@PathVariable Long id) {
+        return globalConfigService.get(id);
     }
 }
