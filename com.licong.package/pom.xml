@@ -22,9 +22,10 @@
 
     <modules>
         <module>com.licong.util</module>
+        <module>com.licong.repository</module>
+        <module>com.licong.service</module>
         <module>com.licong.webapp</module>
         <module>com.licong.schedule</module>
-        <module>com.licong.module</module>
     </modules>
 
     <dependencies>

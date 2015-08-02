@@ -9,7 +9,7 @@
                 <Set name="driverClass">com.mysql.jdbc.Driver</Set>
                 <Set name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf8</Set>
                 <Set name="user">root</Set>
-                <Set name="password">tiger</Set>
+                <Set name="password">root</Set>
             </New>
         </Arg>
     </New>
